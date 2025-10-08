@@ -3,14 +3,25 @@
 # Thư viện chính cho Streamlit
 streamlit
 
-# Thư viện xử lý dữ liệu chính
+# Thư viện xử lý dữ liệu và tính toán
 pandas
+numpy
 
 # Thư viện cho chức năng AI (sử dụng Gemini API)
 google-genai
 
-# Thư viện cần thiết để pandas đọc và ghi file Excel (.xlsx)
-openpyxl
+# Thư viện này đã được sử dụng trong file Python gốc của bạn
+# để hỗ trợ pandas đọc file excel. Tuy nhiên, trong phiên bản mới,
+# bạn đã chuyển sang dán văn bản và không dùng file excel. 
+# Mặc dù không cần thiết nếu chỉ dùng text_area, nhưng nên giữ nếu có kế hoạch
+# quay lại chức năng upload file sau này.
+# openpyxl 
 
-# THÊM THƯ VIỆN NÀY ĐỂ GIẢI QUYẾT LỖI to_markdown()
-tabulate
+# KHÔNG CẦN THIẾT: Hàm to_markdown() của Pandas không yêu cầu thư viện tabulate
+# vì pandas đã tích hợp khả năng này.
+
+# KHÔNG CẦN THIẾT: Thư viện để đọc file Word (.docx) không được sử dụng
+# vì bạn đã chuyển sang phương pháp dán văn bản.
+
+# TỔNG KẾT: Danh sách yêu cầu tối giản và chính xác
+# dựa trên các thư viện được import trong app_pt_duan.py
